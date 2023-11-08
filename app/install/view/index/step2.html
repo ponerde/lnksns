@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>LnkAdmin安装向导</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="/static/install/css/app.css">
+	<script src="/static/js/jquery-3.7.0.min.js"></script>
+	<script src="/static/js/coco-message.min.js"></script>
+</head>
+
+<body>
+
+	<div class="container">
+
+
+
+
+		<div class="card">
+			<div class="full-w">
+			
+					<form id="form">
+						<div class="form-item">
+							<label class="form-label">数据库主机</label>
+							<div class="">
+								<input type="text" name="hostname" value="127.0.0.1" class="form-input">
+							</div>
+							<div class="form-tip">* 数据库地址一般为127.0.0.1</div>
+						</div>
+						<input type="" name="type" value="mysql" hidden="">
+						<div class="form-item ">
+							<label class="form-label">端口</label>
+							<div class="">
+								<input type="text" name="hostport" value="3306" class="form-input">
+							</div>
+							<div class="form-tip">* 一般为3306端口号</div>
+						</div>
+						<div class="form-item">
+							<label class="form-label">数据库名</label>
+							<div class="">
+								<input type="text" name="database" value="LnkAdmin" class="form-input">
+							</div>
+						</div>
+						<div class="form-item ">
+							<label class="form-label">数据库前缀</label>
+							<div class="">
+								<input type="text" name="prefix" value="lnk_" class="form-input">
+							</div>
+							<div class="form-tip">
+								<font color="red">* </font>修改数据库前缀更安全
+							</div>
+						</div>
+						<div class="form-item ">
+							<label class="form-label">数据库用户名</label>
+							<div class="">
+								<input type="text" name="username" value="root" class="form-input">
+							</div>
+							<div class="form-tip">
+								<font color="red">* </font>生产环境下建议使用独立账户
+							</div>
+						</div>
+						<div class="form-item ">
+							<label class="form-label">数据库密码</label>
+							<div class="">
+								<input type="text" name="password" value="123456" class="form-input">
+							</div>
+						</div>
+			
+			
+					<div class="form-item ">
+						<label class="form-label">管理员密码</label>
+						<div class="">
+							<input type="text" name="pwd" value="123456" class="form-input">
+						</div>
+						<div class="form-tip">
+							<font color="red">* </font>请输入后台密码
+						</div>
+					</div>
+					<div class="form-item ">
+						<label class="form-label">确认密码</label>
+						<div class="input-inline">
+							<input type="text" name="repwd" value="123456" class="form-input">
+						</div>
+						<div class="form-tip">
+							<font color="red">* </font>请输入确认密码
+						</div>
+					</div>
+			
+
+
+
+
+
+				</form>
+			</div>
+			<div class="btn-box">
+				<diy onclick="window.history.go(-1);" class="btn">上一步</diy>
+				<div id="sumbit" class="btn">下一步</div>
+			</div>
+		</div>
+
+
+
+	</div>
+	<style>
+
+	</style>
+
+</body>
+
+
+<script type="text/javascript">
+
+	$('#sumbit').click(function () {
+		let data = {};
+		let value = $('#form').serializeArray();
+		$.each(value, function (index, item) {
+			data[item.name] = item.value;
+		});
+
+		$.post('/install/index/step2', data, function (res) {
+			if (res.code == 200) {
+				location.href = res.url;
+			} else {
+				cocoMessage.error(res.msg, 3000);
+			}
+		})
+	})
+
+
+
+
+
+</script>
+
+</html>

@@ -1,0 +1,47 @@
+.container {
+	width: 100%;
+}
+
+.user-list {
+	width: calc(100% - 60rpx);
+	padding: 30rpx;
+	justify-content: space-between;
+}
+
+.user-list-info .avatar {
+	width: 84rpx;
+	height: 84rpx;
+	border-radius: 50%;
+	background: #f8f8f8;
+}
+
+.user-list-info .name view {
+	margin: 0 10rpx 0 20rpx;
+	max-width: 320rpx;
+	font-size: 26rpx;
+}
+
+.user-list-info .name image {
+	width: 26rpx;
+	height: 26rpx;
+}
+
+.user-list .user-list-btn {
+	width: 120rpx;
+	height: 50rpx;
+	line-height: 50rpx;
+	text-align: center;
+	font-size: 20rpx;
+	font-weight: bold;
+	border-radius: 8rpx;
+}
+
+.bg1 {
+	color: #999;
+	background: #f8f8f8;
+}
+
+.bg2 {
+	color: #000;
+	background: #4cd964;
+}

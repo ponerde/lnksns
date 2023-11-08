@@ -1,0 +1,16 @@
+/.idea
+/.vscode
+.DS_Store
+**/.DS_Store
+.DS_Store?
+
+/public/uploads/*
+/runtime/*
+*.log
+.env
+/web/node_modules/*
+node_modules
+/web/.DS_Store
+app/install/config/install.lock
+
+

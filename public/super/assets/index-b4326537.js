@@ -1,0 +1,1 @@
+import{_ as t,c,f as o,o as a,b as _,p as d,i as p,d as s}from"./index-517d70fb.js";const n=e=>(d("data-v-bf30a34c"),e=e(),p(),e),i={class:"index"},r=n(()=>s("div",{class:"box"},[s("div",{class:"img"})],-1)),f=[r],l={__name:"index",setup(e){return c(()=>o.state.config),(u,x)=>(a(),_("div",i,f))}},v=t(l,[["__scopeId","data-v-bf30a34c"]]);export{v as default};

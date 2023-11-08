@@ -1,0 +1,61 @@
+page {
+	background: #f8f8f8;
+}
+
+.box {
+	z-index: 2;
+	margin: 15rpx 30rpx;
+	width: calc(100% - 120rpx);
+	padding: 30rpx;
+	background: #fff;
+	border-radius: 30rpx;
+}
+
+.box-title {
+	padding: 10rpx 30rpx;
+	font-size: 32rpx;
+	font-weight: bold;
+}
+
+.box-doc {
+	padding: 0 30rpx 30rpx;
+	color: #999;
+	font-size: 20rpx;
+	font-weight: 300;
+}
+
+.data-box {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.data-box .data-item {
+	padding: 20rpx 30rpx;
+	width: 97.5rpx;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.data-box .data-item .img {
+	width: 97.5rpx;
+	height: 97.5rpx;
+	border-radius: 50%;
+	background: #f8f8f8;
+}
+
+.data-box .data-item .data-txt {
+	margin-top: 20rpx;
+}
+
+.data-box .data-item .data-txt view {
+	max-width: 120rpx;
+	color: #999;
+	font-size: 20rpx;
+}
+
+.data-box .data-item .data-txt image {
+	margin-left: 5rpx;
+	width: 20rpx;
+	height: 20rpx;
+}

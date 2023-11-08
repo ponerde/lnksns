@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>LnkAdmin安装向导</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="/static/install/css/app.css">
+	<script src="/static/js/jquery-3.7.0.min.js"></script>
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="card">
+			<div class="install">
+				<div class="tips">正在安装，请勿刷新...</div>
+			</div>
+			<div class="complete">
+				<div class="success">安装成功</div>
+				<a href="/" target="_blank" class="admin">后台地址：</a>
+			</div>
+		</div>
+	</div>
+	<style></style>
+
+</body>
+
+<script type="text/javascript">
+
+
+	// 随机字符串
+	function randomString(len) {
+		len = len || 32;
+		var $chars = 'ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz2345678';
+		var maxPos = $chars.length;
+		var pwd = '';
+		for (i = 0; i < len; i++) {
+			pwd += $chars.charAt(Math.floor(Math.random() * maxPos));
+		}
+		return pwd;
+	}
+
+	// 加载数据信息
+	$.get('/install/index/install',{},function(res){
+		if (res.code === 200) {
+	$('.install').remove();
+	var admin = $('.admin');
+	admin.attr('href', '/super/index.html');
+	admin.html('后台地址：http://' + location.host + '/super/index.html');
+	$('.btn-admin').attr('href', '/super/index.html');
+	$('.complete').show();
+	$.get('/install/index/clear', {}, function (res) { });
+			} else {
+			    cocoMessage.error(res.msg,3000);
+			}
+		});
+
+</script>
+
+</html>

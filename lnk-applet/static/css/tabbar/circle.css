@@ -1,0 +1,188 @@
+.container {}
+
+.nav-box {
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-sizing: border-box;
+	transition: all 0.3s;
+}
+
+.nav-box .nav-item {
+	width: 100%;
+	height: 44px;
+}
+
+.nav-box .nav-item .search {
+	margin-left: 30rpx;
+	width: 240rpx;
+	height: 34px;
+	border-radius: 34px;
+	color: #999;
+	font-size: 24rpx;
+	font-weight: bold;
+	transition: all 0.3s;
+}
+
+.search image {
+	margin: 0 10rpx 0 20rpx;
+	width: 32rpx;
+	height: 32rpx;
+}
+
+.put-box {
+	width: 100%;
+	background: #101010;
+	height: 360rpx;
+	padding-bottom: 20rpx;
+	overflow-x: auto;
+}
+
+.put-box .put-item {
+	padding: 0 22rpx;
+}
+
+.put-box .put-item .put-view {
+	flex-shrink: 0;
+	margin: 8rpx;
+	padding: 0 20rpx;
+	height: 100rpx;
+	border-radius: 8rpx;
+	justify-content: center;
+}
+
+.put-view .cu-img-group {
+	margin-left: 10rpx;
+	direction: ltr;
+	unicode-bidi: bidi-override;
+	display: inline-block;
+}
+
+.cu-img-group .cu-img {
+	width: 52rpx;
+	height: 52rpx;
+	border-radius: 52rpx;
+	display: inline-flex;
+	position: relative;
+	margin-left: -10rpx;
+	border-style: solid;
+	border-width: 4rpx;
+	border-color: #212121;
+	background: #313131;
+	vertical-align: middle;
+}
+
+.cu-img-group .cu-img image {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background: #313131;
+}
+
+.cu-img-group .cu-item {
+	padding: 0 15rpx;
+	width: auto !important;
+	height: 52rpx;
+	line-height: 52rpx;
+	text-align: center;
+	color: #999;
+	font-size: 18rpx;
+}
+
+.cu-img-group .cu-active {
+	height: 48rpx;
+	line-height: 48rpx;
+	background: #212121;
+	color: #4cd964;
+}
+
+.put-view .cu-name {
+	margin-left: 15rpx;
+	font-size: 26rpx;
+	font-weight: bold;
+}
+
+.circle-card {
+	margin: 60rpx 30rpx 0;
+	width: calc(100% - 60rpx);
+}
+
+.circle-card .circle-top {
+	width: 100%;
+	justify-content: space-between;
+}
+
+.circle-top .top-name image {
+	width: 32rpx;
+	height: 32rpx;
+}
+
+.circle-top .top-name text {
+	margin-left: 10rpx;
+	font-size: 32rpx;
+	font-weight: bold;
+}
+
+.circle-num text {
+	margin-right: 20rpx;
+	font-size: 20rpx;
+	color: #999;
+}
+
+.circle-card .circle-center {
+	margin-top: 30rpx;
+	width: calc(100% - 40rpx);
+	padding: 20rpx;
+	border-radius: 8rpx;
+	background: #f8f8f8;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+
+.circle-center .img-count {
+	position: absolute;
+	top: 120rpx;
+	right: 40rpx;
+	justify-content: center;
+	width: 60rpx;
+	height: 40rpx;
+	color: #fff;
+	font-size: 20rpx;
+	font-weight: bold;
+	background: rgba(0, 0, 0, .5);
+	border-radius: 8rpx;
+}
+
+.circle-center .img-count image {
+	margin-right: 6rpx;
+	width: 24rpx;
+	height: 24rpx;
+}
+
+.circle-center .circle-left {
+	width: calc(100% - 180rpx);
+}
+
+.circle-user .name {
+	margin: 0 12rpx;
+	max-width: 300rpx;
+	font-size: 28rpx;
+	font-weight: bold;
+}
+
+.circle-user text {
+	color: #999;
+	font-size: 24rpx;
+}
+
+.circle-content {
+	margin-top: 20rpx;
+	width: 100%;
+	color: #333;
+	font-size: 26rpx;
+	font-weight: 500;
+	white-space: pre-line;
+}

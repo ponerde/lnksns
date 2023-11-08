@@ -1,0 +1,58 @@
+.nav-box {
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-sizing: border-box;
+	background: #fff;
+}
+
+.nav-box .nav-item {
+	width: calc(100% - 20rpx);
+	padding: 0 10rpx;
+	height: 44px;
+}
+
+.nav-item .title-label {
+	height: 44px;
+	padding: 0 20rpx;
+	justify-content: center;
+	position: relative;
+}
+
+.nav-item .title-label text {
+	font-weight: bold;
+	transition: all 0.3s;
+}
+
+.nav-item .title-label .active {
+	position: absolute;
+	z-index: -1;
+	width: calc(100% - 30rpx);
+	height: 20rpx;
+	background: #4cd964;
+	transform: rotate(-5deg);
+}
+
+.content-box {
+	width: calc(100% - 60rpx);
+	padding: 30rpx;
+}
+
+.add-box {
+	position: fixed;
+	z-index: 99;
+	right: 30rpx;
+	bottom: 60rpx;
+	width: 90rpx;
+	height: 90rpx;
+	line-height: 90rpx;
+	text-align: center;
+	font-size: 40rpx;
+	font-weight: 900;
+	color: #000;
+	background: #4cd964;
+	box-shadow: 0 10px 20rpx 0 rgba(0, 0, 0, .1);
+	border-radius: 50%;
+}

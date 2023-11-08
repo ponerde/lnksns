@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>LnkAdmin安装向导</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="/static/install/css/app.css">
+	<script src="/static/js/jquery-3.7.0.min.js"></script>
+	<script src="/static/js/coco-message.min.js"></script>
+</head>
+
+<body>
+
+	<div class="container">
+		<!-- <div class="header">
+			<div class="">
+				<h1 class="brand"><img class="logo" src="/static/images/logo-mini.png" alt=""> LnkAdmin</h1>
+				<div class="title">检查安装环境</div>
+			</div>
+		</div> -->
+
+		<div class="card">
+			<div>
+				<table>
+					<thead>
+						<tr>
+							<th>检测项</th>
+							<th>所需环境</th>
+							<th>当前环境</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>php</td>
+							<td> >= 8.0 </td>
+							<td>{$checkEnv.php}</td>
+						</tr>
+						<tr>
+							<td>mysqli</td>
+							<td>模块</td>
+							<td>
+								<eq name="$checkEnv['mysqli']" value="1">
+									<i class=""></i>
+									<else />
+									<i class=""></i>
+								</eq>
+							</td>
+						</tr>
+						<tr>
+							<td>redis</td>
+							<td>模块/不限</td>
+							<td>
+								<eq name="$checkEnv['redis']" value="1">
+									<i class=""></i>
+									<else />
+									<i class=""></i>
+								</eq>
+							</td>
+						</tr>
+						<tr>
+							<td>curl</td>
+							<td>扩展</td>
+							<td>
+								<eq name="$checkEnv.curl" value="1">
+									<i class=""></i>
+									<else />
+									<i class=""></i>
+								</eq>
+							</td>
+						</tr>
+						<tr>
+							<td>exif</td>
+							<td>扩展</td>
+							<td>
+								<eq name="$checkEnv.exif" value="1">
+									<i class=""></i>
+									<else />
+									<i class=""></i>
+								</eq>
+							</td>
+						</tr>
+						<tr>
+							<td>fileinfo</td>
+							<td>扩展</td>
+							<td>
+								<eq name="$checkEnv.fileinfo" value="1">
+									<i class=""></i>
+									<else />
+									<i class=""></i>
+								</eq>
+							</td>
+						</tr>
+
+					</tbody>
+				</table>
+
+				<table>
+					<thead>
+						<tr>
+							<th>目录名</th>
+							<th>写入权限</th>
+							<th>读取权限</th>
+						</tr>
+					</thead>
+					<tbody>
+
+						{volist name="checkDirFile" id="vo"}
+
+						<tr>
+							<td>{$vo[3]}</td>
+							<td>{$vo[1]}</td>
+							<td>{$vo[2]}</td>
+						</tr>
+						{/volist}
+					</tbody>
+				</table>
+				<div class="btn-box">
+					<div class="btn" onclick="window.history.go(-1);">上一步</div>
+					<div class="btn" id="step">下一步</div>
+				</div>
+			</div>
+
+
+		</div>
+		</div>
+	</div>
+	<style>
+
+	</style>
+
+</body>
+
+
+<script type="text/javascript">
+
+	$('#step').click(function () {
+		$.post('/install/index/step1', [], function (res) {
+			if (res.code === 200) {
+				location.href = res.url;
+			}
+			else {
+				cocoMessage.error(res.msg,3000);
+
+			}
+		})
+	})
+
+
+</script>
+
+</html>

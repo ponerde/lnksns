@@ -1,0 +1,15 @@
+/.idea
+/.vscode
+.DS_Store
+**/.DS_Store
+.DS_Store?
+
+/public/uploads/*
+/runtime/*
+/vendor
+*.log
+.env
+/web/node_modules/*
+node_modules
+/web/.DS_Store
+

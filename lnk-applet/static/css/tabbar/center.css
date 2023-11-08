@@ -1,0 +1,248 @@
+.container {}
+
+.nav-box {
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.nav-box .nav-item {
+	position: relative;
+	width: 100%;
+	height: 44px;
+	justify-content: center;
+}
+
+.nav-box .nav-item image {
+	position: absolute;
+	left: 30rpx;
+	width: 48rpx;
+	height: 48rpx;
+	border-radius: 50%;
+	background: #f5f5f5;
+}
+
+.nav-box .nav-item .name {
+	font-size: 26rpx;
+	font-weight: bold;
+}
+
+.user-info {
+	width: calc(100% - 60rpx);
+	padding: 30rpx;
+	color: #fff;
+	position: relative;
+	overflow: hidden;
+}
+
+.user-info .user-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -2;
+	width: 100%;
+	height: 100%;
+	filter: blur(30px);
+}
+
+.user-info .user-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .5);
+}
+
+.user-info .avatar-box {
+	width: 180rpx;
+	height: 180rpx;
+	border-radius: 50%;
+	background: #fff;
+	border: 4rpx solid #f5f5f5;
+}
+
+.user-info .btn-box {
+	width: calc(100% - 180rpx);
+	justify-content: flex-end;
+}
+
+.user-info .btn-box view {
+	margin-left: 15rpx;
+	padding: 0 30rpx;
+	height: 60rpx;
+	border-radius: 8rpx;
+	font-size: 20rpx;
+	font-weight: bold;
+	color: #000;
+}
+
+.user-info .btn-box view image {
+	width: 24rpx;
+	height: 24rpx;
+	margin-right: 5rpx;
+}
+
+.bg1 {
+	background: #4cd964;
+}
+
+.bg2 {
+	background: #fff;
+}
+
+.user-info .info-box .name {
+	margin-top: 20rpx;
+	width: 100%;
+	font-size: 36rpx;
+	font-weight: bold;
+}
+
+.user-info .info-box .tips {
+	width: 100%;
+	color: #ccc;
+	font-size: 22rpx;
+}
+
+.user-info .info-box .tag-box {
+	margin-top: 20rpx;
+	width: 100%;
+}
+
+.user-info .info-box .tag-box view {
+	margin-right: 15rpx;
+	padding: 0 15rpx;
+	height: 45rpx;
+	border-radius: 8rpx;
+	background: rgba(255, 255, 255, .1);
+	font-weight: 500;
+	font-size: 20rpx;
+	justify-content: center;
+}
+
+.user-info .info-box .tag-box image {
+	width: 24rpx;
+	height: 24rpx;
+}
+
+.info-box .num-box {
+	margin-top: 20rpx;
+	width: 100%;
+}
+
+.info-box .num-box .num-item {
+	margin-right: 30rpx;
+	font-size: 20rpx;
+	font-weight: 300;
+	color: #ccc;
+}
+
+.num-box .num-item .t1 {
+	color: #fff;
+	font-size: 28rpx;
+	font-weight: bold;
+	margin-right: 6rpx;
+}
+
+.circle {
+	width: 100%;
+	padding-bottom: 40rpx;
+	border-bottom: 15rpx solid #f8f8f8;
+}
+
+.circle .circle-title {
+	width: calc(100% - 60rpx);
+	padding: 30rpx;
+	font-size: 26rpx;
+	font-weight: bold;
+}
+
+.circle-box {
+	width: calc(100% - 20rpx);
+	padding: 0 10rpx;
+	overflow-x: auto;
+}
+
+.circle-box .circle-item {
+	flex-shrink: 0;
+	width: 140rpx;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+}
+
+.circle-box .circle-item .new {
+	position: absolute;
+	top: 75rpx;
+	right: 20rpx;
+	width: 25rpx;
+	height: 25rpx;
+	border-radius: 50%;
+	background: #4cd964;
+	border: 4rpx solid #fff;
+}
+
+.circle-box .circle-item .name {
+	margin-top: 20rpx;
+	max-width: 140rpx;
+	color: #999;
+	font-size: 24rpx;
+}
+
+.circle-box .circle-item .circle-add {
+	width: 100rpx;
+	height: 100rpx;
+	line-height: 100rpx;
+	text-align: center;
+	font-size: 32rpx;
+	color: #000;
+	background: #f8f8f8;
+	border: 2rpx dashed #000;
+	border-radius: 50rpx;
+}
+
+.bar-box {
+	position: sticky;
+	z-index: 99;
+	width: 100%;
+	height: 100rpx;
+	background: #fff;
+}
+
+.bar-box .bar-item {
+	padding: 0 30rpx;
+	height: 100rpx;
+	line-height: 100rpx;
+	font-size: 26rpx;
+	color: #999;
+	transition: all 0.3s;
+}
+
+.bar-box .bar-item text {
+	margin-left: 10rpx;
+}
+
+.bar-box .bar-active {
+	color: #000;
+	font-weight: bold;
+}
+
+.bar-box .bar-line {
+	width: 2rpx;
+	height: 20rpx;
+	background: #f5f5f5;
+}
+
+.content {
+	width: 100%;
+	min-height: 100vh;
+}
+
+.content .content-box {
+	width: calc(100% - 60rpx);
+	padding: 30rpx;
+}

@@ -1,0 +1,1 @@
+import{_ as t,c,f as o,o as _,b as a,p as d,i as p,d as s}from"./index-0236d453.js";const n=e=>(d("data-v-524804c2"),e=e(),p(),e),i={class:"index"},r=n(()=>s("div",{class:"box"},[s("div",{class:"img"})],-1)),l=[r],u={__name:"index",setup(e){return c(()=>o.state.config),(x,m)=>(_(),a("div",i,l))}},f=t(u,[["__scopeId","data-v-524804c2"]]);export{f as default};

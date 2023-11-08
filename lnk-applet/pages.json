@@ -1,0 +1,143 @@
+{
+	"pages": [{
+		"path": "pages/tabbar/index",
+		"style": {
+			"navigationBarTitleText": "",
+			"enablePullDownRefresh": true,
+			"navigationStyle": "custom"
+		}
+	}, {
+		"path": "pages/tabbar/circle",
+		"style": {
+			"navigationBarTitleText": "",
+			"enablePullDownRefresh": true,
+			"navigationBarTextStyle": "white",
+			"navigationStyle": "custom",
+			"backgroundColor": "#101010",
+			"backgroundColorTop": "#101010",
+			"backgroundColorBottom": "#ffffff"
+		}
+	}, {
+		"path": "pages/tabbar/notice",
+		"style": {
+			"navigationBarTitleText": "消息",
+			"enablePullDownRefresh": true
+		}
+	}, {
+		"path": "pages/tabbar/center",
+		"style": {
+			"navigationBarTitleText": "",
+			"navigationBarTextStyle": "white",
+			"enablePullDownRefresh": true,
+			"navigationStyle": "custom"
+		}
+	}, {
+		"path": "pages/dynamic/details",
+		"style": {
+			"navigationBarTitleText": "",
+			"navigationStyle": "custom"
+		}
+	}, {
+		"path": "pages/dynamic/add",
+		"style": {
+			"navigationBarTitleText": "创作中心"
+		}
+	}, {
+		"path": "pages/circle/details",
+		"style": {
+			"navigationBarTitleText": "",
+			"navigationBarTextStyle": "white",
+			"navigationStyle": "custom"
+		}
+	}, {
+		"path": "pages/circle/fans",
+		"style": {
+			"navigationBarTitleText": "",
+			"backgroundColor": "#f8f8f8",
+			"navigationBarBackgroundColor": "#f8f8f8"
+		}
+	}, {
+		"path": "pages/circle/search",
+		"style": {
+			"navigationBarTitleText": "",
+			"navigationStyle": "custom"
+		}
+	}, {
+		"path": "pages/user/details",
+		"style": {
+			"navigationBarTitleText": "",
+			"navigationBarTextStyle": "white",
+			"navigationStyle": "custom"
+		}
+	}, {
+		"path": "pages/center/follow",
+		"style": {
+			"navigationBarTitleText": ""
+		}
+	}, {
+		"path": "pages/center/means",
+		"style": {
+			"navigationBarTitleText": "",
+			"navigationStyle": "custom"
+		}
+	}, {
+		"path": "pages/setting/index",
+		"style": {
+			"navigationBarTitleText": "设置",
+			"backgroundColor": "#f8f8f8",
+			"navigationBarBackgroundColor": "#f8f8f8"
+		}
+	}, {
+		"path": "pages/setting/thank",
+		"style": {
+			"navigationBarTitleText": "",
+			"navigationStyle": "custom",
+			"backgroundColor": "#f8f8f8",
+			"navigationBarBackgroundColor": "#f8f8f8",
+			"disableScroll": true
+		}
+	}, {
+		"path": "pages/rich-text/index",
+		"style": {
+			"navigationBarTitleText": ""
+		}
+	}, {
+		"path": "pages/web-view/index",
+		"style": {
+			"navigationBarTitleText": ""
+		}
+	}],
+	"tabBar": {
+		"borderStyle": "black",
+		"color": "#000000",
+		"selectedColor": "#000000",
+		"list": [{
+			"pagePath": "pages/tabbar/index",
+			"selectedIconPath": "static/img/tabbar/1.png",
+			"iconPath": "static/img/tabbar/11.png",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/tabbar/circle",
+			"selectedIconPath": "static/img/tabbar/2.png",
+			"iconPath": "static/img/tabbar/22.png",
+			"text": "圈子"
+		}, {
+			"pagePath": "pages/tabbar/notice",
+			"selectedIconPath": "static/img/tabbar/3.png",
+			"iconPath": "static/img/tabbar/33.png",
+			"text": "消息"
+		}, {
+			"pagePath": "pages/tabbar/center",
+			"selectedIconPath": "static/img/tabbar/4.png",
+			"iconPath": "static/img/tabbar/44.png",
+			"text": "我的"
+		}]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#ffffff"
+	},
+	"uniIdRouter": {}
+}

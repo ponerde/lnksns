@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>实时输出执行结果</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#btn-ajax").click(function() {
+				var xhr = new XMLHttpRequest();
+          xhr.timeout = 300000    //设置HTTP请求的时限,超过这个时限就自动停止HTTP请求
+          xhr.ontimeout = function () {
+              alert('请求超时')
+          }   //超过设置时限执行超时操作
+          xhr.open('GET', '/test.php')
+          xhr.send()
+          xhr.onreadystatechange = function () {
+             console.log(99)
+             
+			
+		};
+	})
+})
+	</script>
+</head>
+<body>
+
+	<button id="btn-ajax">开始执行</button>
+	<div id="result"></div>
+</body>
+</html>
