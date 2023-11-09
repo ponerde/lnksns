@@ -1,4 +1,6 @@
-BUG修复、交流、讨论请加群，微信 nzkd01
+##该源码遵循Apache2开源协议发布，并提供免费使用。
+
+##BUG修复、交流、讨论请加群，微信 nzkd01
 
 
 ![1a76cb10-789e-11ee-a752-e75931da074e_0](https://github.com/ponerde/lnksns/assets/150218478/b5d530d1-0d47-4953-b953-4d464d67b5b9)
