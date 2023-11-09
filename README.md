@@ -1,3 +1,6 @@
+BUG修复、交流、讨论请加群，微信 nzkd01
+
+
 ![1a76cb10-789e-11ee-a752-e75931da074e_0](https://github.com/ponerde/lnksns/assets/150218478/b5d530d1-0d47-4953-b953-4d464d67b5b9)
 ![1a76cb10-789e-11ee-a752-e75931da074e_3](https://github.com/ponerde/lnksns/assets/150218478/8973dd83-1218-4944-a7ec-82fabd190d9e)
 ![1a76cb10-789e-11ee-a752-e75931da074e_2](https://github.com/ponerde/lnksns/assets/150218478/81216ff6-9e10-4304-abcb-245bb5023be5)
