@@ -1,7 +1,9 @@
-##该源码遵循Apache2开源协议发布，并提供免费使用。
+##该源码文件内有相关许可文件，可免费使用，具体参照许可文件。
 
 ##BUG修复、交流、讨论请加群，微信 nzkd01
 
+程序后端API接口使用的是ThinkPHP6多应用开发，Element Plus作为后台管理界面UI
+前端采用 uni-app 开发，可适配多端应用
 
 ![1a76cb10-789e-11ee-a752-e75931da074e_0](https://github.com/ponerde/lnksns/assets/150218478/b5d530d1-0d47-4953-b953-4d464d67b5b9)
 ![1a76cb10-789e-11ee-a752-e75931da074e_3](https://github.com/ponerde/lnksns/assets/150218478/8973dd83-1218-4944-a7ec-82fabd190d9e)
